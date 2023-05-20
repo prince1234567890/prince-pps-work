@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class q5 {
+class q6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a, b, temp;
@@ -8,10 +8,11 @@ class q5 {
         a = sc.nextInt();
         System.out.println("no.2");
         b = sc.nextInt();
-        System.out.println("before swap:" + a + ", " + b);
-        temp = a;
-        a = b;
-        b = temp;
-        System.out.println("after swap:" + a + ", " + b);
+        if (a == b) {
+            System.out.println("a and b are equal.");
+        } else {
+            System.out.println("a and b are not equal.");
+        }
+
     }
 }
